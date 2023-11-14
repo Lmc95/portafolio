@@ -1,0 +1,40 @@
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Saludo de bienvenida */
+.portada p:first-child {
+    font-size: 2em;
+    font-weight: 400;
+}
+.portada p:nth-child(2) {
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+.portada p:nth-child(2) span {
+    color: orangered;
+    font-weight: 500;
+}
+.portada p:nth-child(3) {
+    font-size: 1.25em;
+    padding-top: 5px;
+}
+
+/* Redes portada */
+.redes_portada {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.redes_portada img {
+    width: 25px;
+    margin: 0 10px;
+}
+
