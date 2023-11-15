@@ -10,10 +10,9 @@
 .acerca_de h1 {
     width: 100%;
     text-align: center;
-    font-size: 1.25em;
     padding-bottom: 10px;
 }
 .foto_perfil img {
-    width: 150px;
+    width: 200px;
     padding: 20px 0;
 }
