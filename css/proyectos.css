@@ -1,0 +1,50 @@
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    border: 1px solid cyan;
+    padding-top: 50px;
+}
+
+.carta_proyecto {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.info_proyecto {
+    padding: 10px;
+}
+.info_proyecto h2 {
+    font-size: 1.25em;
+    padding-bottom: 5px;
+}
+.img_proyecto img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.tec_demo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.tec {
+    margin-top: 20px;
+}
+.tec img {
+    width: 30px;
+    margin-right: 5px;
+}
+.tec_demo a {
+    margin: 0 5px 5px 0;
+    color: orangered;
+}

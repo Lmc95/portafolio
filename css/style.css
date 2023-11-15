@@ -40,10 +40,11 @@ main {
 }
 #contenedor_padre {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 100px); /*  -80px header + -20 padding */
+    height: auto; /*  -80px header + -20 padding */
     padding: 10px 15px;
 }
 .cont_header {

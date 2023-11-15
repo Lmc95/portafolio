@@ -3,10 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.39);
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    height: calc(100vh - 100px);
+    border: 1px solid green;
 }
 
 /* Saludo de bienvenida */
