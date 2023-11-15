@@ -11,6 +11,9 @@
     text-align: center;
     padding-bottom: 10px;
 }
+.acerca_de p {
+    padding: 5px 10px;
+}
 .foto_perfil img {
     width: 200px;
     padding: 20px 0;

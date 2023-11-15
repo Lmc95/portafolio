@@ -1,0 +1,76 @@
+/* MIN-WIDTH 550px */
+@media screen and (min-width: 600px) {
+    /* PERFIL */
+    .perfil {
+        flex-direction: row;
+        align-items: center;
+    }
+    .foto_perfil img {
+        margin: 0 30px;
+    }
+    .acerca_de {
+        width: 90%;
+        padding: 0 20px;
+    }
+    .acerca_de h1 {
+        text-align: start;
+        margin: 0;
+        padding: 0;
+    }
+    .acerca_de p {
+        padding: 10px 0 0;
+        width: 100%;
+        max-width: 500px;
+    }
+    /* PROYECTOS */
+    .proyectos {
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+    .proyectos h1 {
+        text-align: start;
+    }
+    .carta_proyecto {
+        max-width: 800px;
+        width: auto;
+        height: 200px;
+        padding: 0;
+        flex-direction: row;
+    }
+    .img_proyecto {
+        display: flex;
+        align-items: center;
+    }
+    .img_proyecto img {
+        width: 250px;
+        height: 200px;
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .cont_proyecto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* FORMACION */
+    .formacion {
+        padding: 0 20px;
+        align-items: flex-start;
+    }
+    .formacion h1 {
+        text-align: start;
+    }
+    .cont_formacion {
+        width: 100%;
+    }
+    .cont_tecnologias {
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width: 700px) {
+    
+}
