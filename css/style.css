@@ -16,6 +16,10 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: auto;
+    background-image: url('/assets/imagenes/bg/bg_white.svg');
+    background-position: center;
+
 }
 
 a {
@@ -33,9 +37,10 @@ header {
     height: 80px;
     display: flex;
     justify-content: center;
+
 }
 main {
-    background-color: rgb(255, 185, 185);
+    background-color: rgba(200, 200, 200, 0.25);
     width: 100%;
 }
 #contenedor_padre {
@@ -46,6 +51,13 @@ main {
     width: 100%;
     height: auto; /*  -80px header + -20 padding */
     padding: 10px 15px;
+}
+.separador {
+    width: 75%;
+    height: .5px;
+    border: none;
+    background-color: black;
+    margin: 30px 0;
 }
 .cont_header {
      max-width: 1920px;
