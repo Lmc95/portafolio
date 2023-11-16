@@ -11,10 +11,12 @@
 .portada p:first-child {
     font-size: 2em;
     font-weight: 400;
+    letter-spacing: 2px;
 }
 .portada p:nth-child(2) {
     font-size: 1.5em;
     padding-top: 10px;
+    letter-spacing: 2px;
 }
 .portada p:nth-child(2) span {
     color: orangered;
@@ -23,6 +25,7 @@
 .portada p:nth-child(3) {
     font-size: 1.25em;
     padding-top: 5px;
+    letter-spacing: 2px;
 }
 
 /* Redes portada */

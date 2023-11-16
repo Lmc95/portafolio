@@ -33,15 +33,22 @@ li {
 
 header {
     background-color: rgb(209, 209, 209);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
-
 }
+
 main {
     background-color: rgba(200, 200, 200, 0.25);
     width: 100%;
+}
+.menu_lateral {
+    display: none;
 }
 #contenedor_padre {
     display: flex;
@@ -67,6 +74,9 @@ main {
      display: flex;
      justify-content: space-between;
      align-items: center;
+}
+.menu_desktop {
+    display: none;
 }
 .cont_header img {
     width: 75px;

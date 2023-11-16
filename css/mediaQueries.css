@@ -1,9 +1,25 @@
 /* MIN-WIDTH 550px */
 @media screen and (min-width: 600px) {
+    /* PORTADA */
+    .portada p:first-child {
+        font-size: 3em;
+    }
+    .portada p:nth-child(2) {
+        font-size: 2em;
+    }
+    .portada p:nth-child(3) {
+        font-size: 1.5em;
+    }
+    .redes_portada img {
+        width: 35px;
+        margin: 0 10px;
+    }
     /* PERFIL */
     .perfil {
         flex-direction: row;
         align-items: center;
+        min-height: 75vh;
+        max-width: 800px;
     }
     .foto_perfil img {
         margin: 0 30px;
@@ -25,7 +41,8 @@
     /* PROYECTOS */
     .proyectos {
         align-items: flex-start;
-        padding: 0 20px;
+        min-height: auto;
+        padding: 30px 20px;
     }
     .proyectos h1 {
         text-align: start;
@@ -58,8 +75,9 @@
 
     /* FORMACION */
     .formacion {
-        padding: 0 20px;
         align-items: flex-start;
+        min-height: auto;
+        padding: 30px 20px;
     }
     .formacion h1 {
         text-align: start;
@@ -69,8 +87,196 @@
     }
     .cont_tecnologias {
         justify-content: flex-start;
+        min-height: auto;
+        padding: 30px 0;
     }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
+    /* PORTADA */
+    .portada p:first-child {
+        font-size: 3.5em;
+    }
+    .portada p:nth-child(2) {
+        font-size: 2.5em;
+    }
+    .portada p:nth-child(3) {
+        font-size: 1.75em;
+    }
+    .redes_portada img {
+        width: 35px;
+        margin: 0 10px;
+    }
+    .proyectos {
+        align-items: center;
+    }
+    .proyectos h1 {
+        width: 800px;
+    }
+
+    .formacion {
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+    }
+    .formacion h1,
+    .cont_tecnologias {
+        width: 800px;
+    }
+    .separador {
+        max-width: 840px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    /* GLOBAL */
+    body {
+        position: relative;
+    }
+    main {
+        display: flex;
+    }
+    #contenedor_padre {
+        width: calc(100% - 250px);
+    }
+    /* HEADER */
+    .cont_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu_desktop {
+        display: block;
+    }
+    .menu_desktop ul {
+        display: flex;
+    }
+    .menu_desktop ul li {
+        margin: 0 20px;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+    .btn_menu {
+        display: none;
+    }
+
+
+    /* MENU LATERAL */
+    .menu_lateral {
+        display: block;
+        position: sticky;
+        top: 80px;
+        left: 0;
+        z-index: 9998;
+        width: 250px;
+        height: calc(100vh - 80px);
+        background-color: rgb(175, 175, 175);
+        overflow-y: auto;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.25);
+        border-right: 1px solid rgba(0, 0, 0, 0.25);
+    }
+    .perfil_lateral {
+        width: 100%;
+        padding: 30px 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .perfil_lateral img {
+        width: 150px;
+    }
+    /* redes */
+    .nombre_redes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nombre {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+    .redes_lateral {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-left: 3px;
+    }
+    .redes_lateral i {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+    /* datos */
+    .datos_lateral {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 10px 20px;
+        margin-top: 25px;
+    }
+    .residencia,
+    .email,
+    .telefono {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .residencia i,
+    .email i,
+    .telefono i {
+        width: 30px;
+        font-size: 1.2em;
+    }
+    /* tecnologias (menu) */
+    .tec_lateral {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 10px 20px;
+        margin-top: 10px;
+    }
+    .tec_lateral p {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+    .tecnologias_lateral img {
+        width: 30px;
+        margin-right: 5px;
+    }
+    /* DESCARGAR CV */
+    .descargar_cv {
+        width: 150px;
+    }
+    .descargar_cv a {
+        width: 100%;
+    }
+    .btn_cv {
+        width: 100%;
+        border: none;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        padding: 10px 20px;
+        font-size: 1em;
+        font-weight: bold;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    .btn_cv:hover {
+        color:orangered;
+    }
     
+    /* TECNOOLOGIAS */
+    .cont_tecnologias {
+        margin-bottom: 250px;
+    }
+    footer {
+        width: calc(100% - 250px);
+        height: 200px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: 1px solid red;
+    }
 }
