@@ -14,6 +14,7 @@
 </head>
 <body>
     <header>
+        <div class="border_bottom"></div>
         <div class="cont_header">
             <figure>
                 <img src="/assets/imagenes/logo/logo_lmc.png" alt="Logo LMC">
@@ -22,10 +23,10 @@
             <div class="cont_menu">
                 <nav class="menu_desktop">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Formacion</a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="#nav_proyectos">Proyectos</a></li>
+                        <li><a href="#nav_formacion">Formacion</a></li>
+                        <li><a href="#nav_contacto">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="botones">
@@ -97,35 +98,37 @@
 
         <section id="contenedor_padre">
 
-            <!-- PORTADA -->
-            <article class="portada">
-                <p>Hola!</p>
-                <p>Soy <span>Lucas M. Carranza</span></p>
-                <p>Frontend Dev.</p>
-                <div class="redes_portada">
-                    <a href="#"><img src="/assets/imagenes/icon/linkedin.svg" alt="icono linkedin"></a>
-                    <a href="#"><img src="/assets/imagenes/icon/facebook.svg" alt="icono facebook"></a>
-                    <a href="#"><img src="/assets/imagenes/icon/github.svg" alt="icono github"></a>
-                </div>
-            </article>
+            <section class="contenedor_perfil">
+                <!-- PORTADA -->
+                <article id="nav_portada" class="portada">
+                    <p>Hola!</p>
+                    <p>Soy <span>Lucas M. Carranza</span></p>
+                    <p>Frontend Dev.</p>
+                    <div class="redes_portada">
+                        <a href="#"><img src="/assets/imagenes/icon/linkedin.svg" alt="icono linkedin"></a>
+                        <a href="#"><img src="/assets/imagenes/icon/facebook.svg" alt="icono facebook"></a>
+                        <a href="#"><img src="/assets/imagenes/icon/github.svg" alt="icono github"></a>
+                    </div>
+                </article>
 
-            <hr class="separador">
+                <hr id="separador_perfil" class="separador">
 
-            <!-- PERFIL -->
-            <article class="perfil">
-                <figure class="foto_perfil">
-                    <img src="/assets/imagenes/img/perfil-foto.png" alt="foto de perfil">
-                </figure>
-                <div class="acerca_de">
-                    <h1 class="titulo_contenedor">ACERCA DE MÍ</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, atque? Distinctio, quisquam nemo. Consequatur soluta dolorum quos necessitatibus nulla quae?</p>
-                </div>
-            </article>
+                <!-- PERFIL -->
+                <article id="nav_perfil" class="perfil">
+                    <figure class="foto_perfil">
+                        <img src="/assets/imagenes/img/perfil-foto.png" alt="foto de perfil">
+                    </figure>
+                    <div class="acerca_de">
+                        <h1 class="titulo_contenedor">ACERCA DE MÍ</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, atque? Distinctio, quisquam nemo. Consequatur soluta dolorum quos necessitatibus nulla quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur expedita eaque minus dolor, suscipit nulla id ipsa adipisci velit impedit atque laboriosam soluta, placeat saepe delectus, facere deleniti in!</p>
+                    </div>
+                </article>
+            </section>
 
             <hr class="separador">
 
             <!-- PROYECTOS -->
-            <article class="proyectos">
+            <article id="nav_proyectos" class="proyectos">
                 <h1 class="titulo_contenedor">PROYECTOS</h1>
                 <!-- CARTA -->
                 <div class="carta_proyecto">
@@ -174,7 +177,7 @@
             <hr class="separador">
 
             <!-- FORMACIÓN -->
-            <article class="formacion">
+            <article id="nav_formacion" class="formacion">
                 <h1 class="titulo_contenedor">FORMACIÓN</h1>
                 <div class="cont_formacion">
                     <ul class="lista_cursos">
@@ -210,7 +213,7 @@
 
     </main>
 
-    <footer>
+    <footer id="nav_contacto">
         <h1>FOOTER</h1>
     </footer>
 

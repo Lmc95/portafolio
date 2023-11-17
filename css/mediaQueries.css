@@ -92,20 +92,7 @@
     }
 }
 @media screen and (min-width: 800px) {
-    /* PORTADA */
-    .portada p:first-child {
-        font-size: 3.5em;
-    }
-    .portada p:nth-child(2) {
-        font-size: 2.5em;
-    }
-    .portada p:nth-child(3) {
-        font-size: 1.75em;
-    }
-    .redes_portada img {
-        width: 35px;
-        margin: 0 10px;
-    }
+    /* PROYECTOS */
     .proyectos {
         align-items: center;
     }
@@ -131,6 +118,9 @@
     body {
         position: relative;
     }
+    .border_bottom {
+        width: calc(100% - 250px);
+    }
     main {
         display: flex;
     }
@@ -153,6 +143,11 @@
         margin: 0 20px;
         font-size: 1.2em;
         font-weight: 500;
+        transition: all .3s ease-in-out;
+    }
+    .menu_desktop li:hover {
+        font-size: 1.22em;
+        color: orangered;
     }
     .btn_menu {
         display: none;
@@ -168,9 +163,8 @@
         z-index: 9998;
         width: 250px;
         height: calc(100vh - 80px);
-        background-color: rgb(175, 175, 175);
+        background-color: rgb(230, 230, 230);
         overflow-y: auto;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.25);
         border-right: 1px solid rgba(0, 0, 0, 0.25);
     }
     .perfil_lateral {
@@ -266,7 +260,7 @@
     .btn_cv:hover {
         color:orangered;
     }
-    
+
     /* TECNOOLOGIAS */
     .cont_tecnologias {
         margin-bottom: 250px;
@@ -278,5 +272,61 @@
         bottom: 0;
         right: 0;
         border: 1px solid red;
+    }
+}
+@media screen and (min-width: 1600px){
+    body {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        background-image: none;
+        background-color: #E6E6E6;
+    }
+    main {
+        background-image: url('/assets/imagenes/bg/bg_white.svg');
+        border-right: 1px solid rgba(0, 0, 0, 0.25);
+    }
+    /* PORTADA - PERFIL */
+    #separador_perfil {
+        display: none;
+    }
+    .contenedor_perfil {
+        width: 90%;
+        height: calc(100vh - 100px);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px;
+    }
+    .portada {
+        width: 40%;
+        height: 600px;
+    }
+    .perfil {
+        width: 60%;
+        height: 600px;
+        min-height: auto;
+    }
+    .foto_perfil img {
+        width: 250px;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .contenedor_perfil {
+        height: 720px;
+    }
+    header {
+        border-left: 1px solid rgba(0, 0, 0, 0.25);
+        border-right: 1px solid rgba(0, 0, 0, 0.25);
+    }
+    header,
+    .menu_lateral {
+        border-left: 1px solid rgba(0, 0, 0, 0.25);
+        padding-left: 10px;
+    }
+    .descargar_cv {
+        margin-left: -10px;
     }
 }
