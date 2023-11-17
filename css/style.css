@@ -19,7 +19,6 @@ body {
     height: auto;
     background-image: url('/assets/imagenes/bg/bg_white.svg');
     background-position: center;
-
 }
 
 a {
@@ -48,6 +47,7 @@ header {
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 9998;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 main {
@@ -85,9 +85,7 @@ main {
      justify-content: space-between;
      align-items: center;
 }
-.menu_desktop {
-    display: none;
-}
+
 .cont_header img {
     width: 75px;
 }
@@ -111,6 +109,9 @@ main {
     font-size: 25px;
     color: rgba(0, 0, 0, 0.75);
 }
+
+/* MENU */
+/* boton */
 .btn_menu  {
     width: 35px;
     height: 35px;
@@ -125,6 +126,70 @@ main {
     border-radius: 5px;
 }
 
+.btn_menu_cerrar {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.btn_menu_cerrar div:first-child {
+    transform: rotate(-45deg);
+    position: absolute;
+}
+.btn_menu_cerrar div:nth-child(2) {
+    visibility: hidden;
+}
+.btn_menu_cerrar div:nth-child(3) {
+    transform: rotate(45deg);
+    position: absolute;
+}
+/* menu mobile */
+.menu_desktop {
+    background: rgb(203,203,203);
+    background: linear-gradient(0deg, rgba(203,203,203,1) 0%, rgba(249,249,249,1) 100%);
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    z-index: 5000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transform: translateX(-50%);
+    margin-left: -120%;
+    transition: all .5s ease-in-out;
+}
+.menu_desktop ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: -50px;
+    padding: 10px 10px 50px;
+}
+.menu_desktop a {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+.menu_desplegar {
+    visibility: visible;
+    margin: 0;
+}
+
+
+/* LOS H1 DE CONTENEDORES */
 .titulo_contenedor {
     font-size: 1.75em;
     width: 100%;

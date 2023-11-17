@@ -134,19 +134,36 @@
         align-items: center;
     }
     .menu_desktop {
-        display: block;
+        background: none;
+        box-shadow: none;
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        transform: translate(0);
+        visibility: visible;
+        min-height: auto;
+        margin: 0;
     }
+
     .menu_desktop ul {
         display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
     }
-    .menu_desktop ul li {
+    .menu_desktop a {
+        border: none;
+        border-radius: none;
+        width: auto;
         margin: 0 20px;
+        padding: 0;
         font-size: 1.2em;
         font-weight: 500;
         transition: all .3s ease-in-out;
     }
-    .menu_desktop li:hover {
-        font-size: 1.22em;
+    .menu_desktop a:hover {
+        font-size: 1.24em;
         color: orangered;
     }
     .btn_menu {
