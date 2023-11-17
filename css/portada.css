@@ -34,8 +34,8 @@
     text-align: center;
     padding-top: 20px;
 }
-.redes_portada img {
-    width: 25px;
+.redes_portada i {
+    font-size: 25px;
     margin: 0 10px;
 }
 

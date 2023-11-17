@@ -1,0 +1,47 @@
+/* GLOBAL - OSCURO */
+.modo_oscuro {
+    background-image: url('/assets/imagenes/bg/bg_black.svg');
+    background-position: center;
+}
+
+.menu_desktop_oscuro {
+    background: rgb(15, 15, 15);
+    background: linear-gradient(0deg, rgba(5,5,5,1) 100%), rgba(15, 15, 15, 1) 0%;
+    color: rgb(205,205,205);
+}
+.menu_desktop_oscuro a {
+    border: 1px solid rgba(250, 250, 250, 0.5);
+}
+.modo_oscuro h1,
+.modo_oscuro h2,
+.modo_oscuro p,
+.modo_oscuro i {
+    color: rgb(205, 205, 205);
+}
+.btn_menu_oscuro div {
+    background-color: rgb(205, 205, 205);
+}
+.separador_oscuro {
+    background-color: rgba(250, 250, 250, 0.5);
+}
+/* HEADER OSCURO */
+.header_oscuro {
+    background-color: rgb(15, 15, 15, 1);
+}
+.menu_lateral_oscuro {
+    background-color: #0f0f0f;
+    border-right: 1px solid rgba(250, 250, 250, 0.25);
+}
+.border_bottom_oscuro {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.25);
+}
+
+/* CARTAS PROYECTOS - FORMACIÓN */
+.carta_oscuro,
+.lista_oscuro li {
+    background-color: rgb(20, 20, 20);
+    box-shadow: 1px 1px 10px black;
+}
+.cont_padre_oscuro {
+    background-color: rgba(0, 0, 0, 0.7)
+}

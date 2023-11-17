@@ -10,8 +10,8 @@
     .portada p:nth-child(3) {
         font-size: 1.5em;
     }
-    .redes_portada img {
-        width: 35px;
+    .redes_portada i {
+        font-size: 35px;
         margin: 0 10px;
     }
     /* PERFIL */
