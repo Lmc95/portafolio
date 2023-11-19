@@ -128,6 +128,10 @@
         width: calc(100% - 250px);
     }
     /* HEADER */
+    .header_oscuro {
+        border-right: 1px solid rgba(250, 250, 250, 0.25);
+        border-left: 1px solid rgba(250, 250, 250, 0.25);
+    }
     .cont_menu {
         display: flex;
         justify-content: space-between;
@@ -170,7 +174,9 @@
         display: none;
     }
 
-
+    .modo_oscuro {
+        border-right: 1px solid rgba(250, 250, 250, 0.25);
+    }
     /* MENU LATERAL */
     .menu_lateral {
         display: block;
@@ -284,11 +290,12 @@
     }
     footer {
         width: calc(100% - 250px);
-        height: 200px;
         position: absolute;
         bottom: 0;
         right: 0;
-        border: 1px solid red;
+    }
+    .footer_oscuro {
+        border-right: 1px solid rgba(250, 250, 250, 0.25);
     }
 }
 @media screen and (min-width: 1600px){

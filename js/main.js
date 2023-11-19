@@ -17,7 +17,7 @@ const contPadre = document.getElementById('contenedor_padre');
 const separador = document.querySelectorAll('.separador');
 const cartaProyecto = document.querySelectorAll('.carta_proyecto');
 const cartaFormacion = document.querySelector('.lista_cursos');
-
+const footerN = document.querySelector('footer');
 
 
 let contadorBtnColor = 0;
@@ -86,6 +86,7 @@ const modoNoche = () => {
     btnDia.style.display = 'none';
     btnNoche.style.display = 'block';
     // Estilos noche
+    document.body.classList.add('body_oscuro');
     botonMenu.classList.add('btn_menu_oscuro');
     headerN.classList.add('header_oscuro');
     borderHeader.classList.add('border_bottom_oscuro');
@@ -100,12 +101,14 @@ const modoNoche = () => {
         e.classList.add('carta_oscuro');
     })
     cartaFormacion.classList.add('lista_oscuro');
+    footerN.classList.add('footer_oscuro');
 }
 const modoDia = () => {
     // Boton modo dia
     btnDia.style.display = 'block';
     btnNoche.style.display = 'none';
     // Estilos dia
+    document.body.classList.remove('body_oscuro');
     botonMenu.classList.remove('btn_menu_oscuro');
     headerN.classList.remove('header_oscuro');
     borderHeader.classList.remove('border_bottom_oscuro');
@@ -120,4 +123,5 @@ const modoDia = () => {
         e.classList.remove('carta_oscuro');
     })
     cartaFormacion.classList.remove('lista_oscuro');
+    footerN.classList.remove('footer_oscuro');
 }
