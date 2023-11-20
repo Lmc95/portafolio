@@ -14,6 +14,9 @@
         font-size: 35px;
         margin: 0 10px;
     }
+    .menu_desktop_oscuro a {
+        border: 1px solid rgba(205,205,205, 0.35);
+    }
     /* PERFIL */
     .perfil {
         flex-direction: row;
@@ -49,7 +52,7 @@
     }
     .carta_proyecto {
         max-width: 800px;
-        width: auto;
+        width: 100%;
         height: 200px;
         padding: 0;
         flex-direction: row;
@@ -137,6 +140,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    .menu_desktop_oscuro a {
+        border: none;
+    }
     .menu_desktop {
         background: none;
         box-shadow: none;
@@ -149,7 +155,7 @@
         min-height: auto;
         margin: 0;
     }
-
+    
     .menu_desktop ul {
         display: flex;
         flex-direction: row;
@@ -320,7 +326,7 @@
         display: none;
     }
     .contenedor_perfil {
-        width: 90%;
+        width: 95%;
         height: calc(100vh - 100px);
         display: flex;
         justify-content: center;
@@ -335,9 +341,11 @@
         width: 60%;
         height: 600px;
         min-height: auto;
+        padding-left: 30px;
     }
     .foto_perfil img {
         width: 250px;
+        margin-right: 100px;
     }
 }
 @media screen and (min-width: 2000px) {
