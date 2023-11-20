@@ -17,6 +17,7 @@ const contPadre = document.getElementById('contenedor_padre');
 const separador = document.querySelectorAll('.separador');
 const cartaProyecto = document.querySelectorAll('.carta_proyecto');
 const cartaFormacion = document.querySelector('.lista_cursos');
+const formContacto = document.querySelector('.form_contacto');
 const footerN = document.querySelector('footer');
 
 
@@ -101,6 +102,7 @@ const modoNoche = () => {
         e.classList.add('carta_oscuro');
     })
     cartaFormacion.classList.add('lista_oscuro');
+    formContacto.classList.add('form_contaco_oscuro');
     footerN.classList.add('footer_oscuro');
 }
 const modoDia = () => {
@@ -123,5 +125,6 @@ const modoDia = () => {
         e.classList.remove('carta_oscuro');
     })
     cartaFormacion.classList.remove('lista_oscuro');
+    formContacto.classList.remove('form_contaco_oscuro');
     footerN.classList.remove('footer_oscuro');
 }

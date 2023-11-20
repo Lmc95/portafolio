@@ -27,7 +27,7 @@
                         <li><a href="/index.html">Inicio</a></li>
                         <li><a href="#nav_proyectos">Proyectos</a></li>
                         <li><a href="#nav_formacion">Formacion</a></li>
-                        <li><a href="#nav_contacto">Contacto</a></li>
+                        <li><a href="#form_contacto">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="botones">
@@ -219,7 +219,29 @@
                 </div>
 
             </article>
+            <hr class="separador">
+            <h1 id="h1_contacto" class="titulo_contenedor">Contacto</h1>
+            <form id="form_contacto" class="form_contacto" name="contact" method="POST" netlify>
+                <p>
+                  <label for="name">Nombre:</label>
+                  <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                  <label for="message">Mensaje:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </p>
+                <p>
+                  <button class="btn_contacto" type="submit">Enviar</button>
+                </p>
+            </form>
         </section>
+
+        
+          
 
     </main>
 

@@ -201,8 +201,71 @@ main {
     text-align: center;
 }
 
+/* FORMULARIO CONTACTO */
+#h1_contacto {
+    margin: 50px 0 30px;
+}
+.form_contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(240, 240, 240, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.form_contacto p {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.form_contacto label {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.75);
+    width: 100px;
+    margin-bottom: 5px;
+}
+.form_contacto input,
+.form_contacto textarea {
+    background-color: rgba(250, 250, 250, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    height: 30px;
+    padding: 0 5px;
+}
+.form_contacto textarea {
+    height: 75px;
+    max-height: 150px;
+}
+.form_contacto input,
+.form_contacto textarea:focus {
+    outline: none;
+}
+.btn_contacto {
+    background-color: rgb(235, 235, 235);
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.btn_contacto:hover {
+    background-color: rgb(205, 205, 205);
+    border-color: rgba(0, 0, 0, 0.5);
+}
 
-
+/* FOOTER */
 footer {
     display: flex;
     align-items: center;

@@ -286,7 +286,10 @@
 
     /* TECNOOLOGIAS */
     .cont_tecnologias {
-        margin-bottom: 250px;
+        margin-bottom: 0;
+    }
+    .form_contacto {
+        margin-bottom: 150px;
     }
     footer {
         width: calc(100% - 250px);
