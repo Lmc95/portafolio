@@ -14,9 +14,6 @@
         font-size: 35px;
         margin: 0 10px;
     }
-    .menu_desktop_oscuro a {
-        border: 1px solid rgba(205,205,205, 0.35);
-    }
     /* PERFIL */
     .perfil {
         flex-direction: row;
@@ -140,7 +137,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    .menu_desktop_oscuro a {
+    .menu_desktop_oscuro li a {
         border: none;
     }
     .menu_desktop {
